@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "git@github.com:Xabadu/LuchaPlayground.git",
   "author": "Fernando Larrañaga <xabadu@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "lodash-inflection": "^1.5.0"
+  }
 }
