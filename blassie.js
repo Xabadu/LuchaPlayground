@@ -15,7 +15,7 @@ images.forEach(function(image) {
   let imageFile = fs.readFileSync(IMAGE_PATH + '/' + image);
   imageFile = new Buffer(imageFile, 'binary').toString('base64');
   tempObj[slug] = {
-    slug: slug,
+    key: slug,
     name: _.titleize(cleanKey.split('-').join(' ')),
     image: 'data:image/jpg;base64,' + imageFile
   }
