@@ -265,3 +265,6 @@ buck-out/
 .fakebuckversion
 
 # End of https://www.gitignore.io/api/code,node,macos,reactnative
+
+# output files
+wrestlers.json
