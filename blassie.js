@@ -6,7 +6,7 @@ const IMAGE_PATH = process.argv[2];
 
 const images = fs.readdirSync(IMAGE_PATH, 'utf8');
 
-let baseStructure = { wrestlers: {} };
+let wrestlers = {};
 
 images.forEach(function(image) {
   const tempObj = {};
@@ -21,10 +21,10 @@ images.forEach(function(image) {
     name: _.titleize(searchTerm),
     image: 'data:image/jpg;base64,' + imageFile
   }
-  _.extend(baseStructure.wrestlers, tempObj);
+  _.extend(wrestlers, tempObj);
 });
 
-const output = JSON.stringify(baseStructure);
+const output = JSON.stringify(wrestlers);
 
 fs.writeFile('./output/wrestlers.json', output, 'utf8', function(err) {
   if(err) {

@@ -1,7 +1,6 @@
 const fs = require('fs');
 const XLSX = require('xlsx');
 const _ = require('lodash');
-_.mixin(require('lodash-inflection'));
 
 const FILE_PATH = process.argv[2];
 const FILE_NAME = 'promotions.xlsx';
