@@ -26,7 +26,7 @@ images.forEach(function(image) {
 
 const output = JSON.stringify(baseStructure);
 
-fs.writeFile('wrestlers.json', output, 'utf8', function(err) {
+fs.writeFile('./output/wrestlers.json', output, 'utf8', function(err) {
   if(err) {
     console.log(err);
   } else {

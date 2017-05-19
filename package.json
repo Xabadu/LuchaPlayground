@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4",
-    "lodash-inflection": "^1.5.0"
+    "lodash-inflection": "^1.5.0",
+    "xlsx": "^0.10.3"
   }
 }
