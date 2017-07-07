@@ -16,8 +16,9 @@ promotions.forEach(function(promotion) {
   const tempObj = {};
   let imageFile = fs.readFileSync(`${FILE_PATH}/${promotion.logo}`);
   imageFile = new Buffer(imageFile, 'binary').toString('base64');
-  tempObj[promotion.key] = promotion;
-  tempObj[promotion.key].logo = `data:image/jpg;base64,${imageFile}`
+  const slug = promotion.key.toLowerCase();
+  tempObj[slug] = promotion;
+  tempObj[slug].logo = `data:image/jpg;base64,${imageFile}`
   _.extend(baseStructure, tempObj);
 });
 
