@@ -268,3 +268,6 @@ buck-out/
 
 # output
 output
+
+# config
+config.js

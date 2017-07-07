@@ -24,7 +24,7 @@ promotions.forEach(function(promotion) {
 
 const output = JSON.stringify(baseStructure);
 
-fs.writeFile('./output/promotions.json', output, 'utf8', function(err) {
+fs.writeFile('../output/promotions.json', output, 'utf8', function(err) {
   if(err) {
     console.log(err);
   } else {
